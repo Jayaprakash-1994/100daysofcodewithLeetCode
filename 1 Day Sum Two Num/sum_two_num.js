@@ -30,7 +30,7 @@ var sumTwoNum = function (input,target){
     var map = new Map();
     for(let i=0;i < input.length;i++ ){
         if(map.get(input[i]) === undefined){
-            map.set(target-input[i],i); //subtracting the Target values with input values & storing result values with Position. 
+            map.set(target-input[i],i); 
         }
         else{
             return [map.get(input[i]) ,i];
@@ -38,7 +38,7 @@ var sumTwoNum = function (input,target){
     }
 }
 
-console.log(sumTwoNum([2,7,11,15],9));
-console.log(sumTwoNum([3,2,4],6));
-console.log(sumTwoNum([3,3],6));
+sumTwoNum([2,7,11,15],9);
+sumTwoNum([3,2,4],6);
+sumTwoNum([3,3],6);
 
