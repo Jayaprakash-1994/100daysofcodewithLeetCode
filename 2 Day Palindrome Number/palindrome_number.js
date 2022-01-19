@@ -22,7 +22,7 @@ For example, 121 is a palindrome while 123 is not.
         return false;
     }
 };
-
+ //another Solution
 var isPalindromeCheck = function(x) {
     var strVal = String(x).split("");
     var reverseStr ="";
