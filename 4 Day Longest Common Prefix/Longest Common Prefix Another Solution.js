@@ -9,14 +9,14 @@ var longestCommonPrefix = function (strs) {
     else {
         var previousChar = "";
         var status = false;
-        var currentWord = strs[0].split(""); //f,l,o,w,e,r
+        var currentWord = strs[0].split(""); 
         for (let j = 0; j < currentWord.length; j++) {
             result = "";
-            var currentWordChar = previousChar + currentWord[j]; //f
+            var currentWordChar = previousChar + currentWord[j]; 
             for (let k = 1; k < strs.length; k++) {
-                var nextWordChar = previousChar + strs[k][j]; //fl
+                var nextWordChar = previousChar + strs[k][j]; 
                 if (currentWordChar == nextWordChar) {
-                    result = strs[k][j]; //f  
+                    result = strs[k][j]; 
                     status = true;
                 }
                 else {
