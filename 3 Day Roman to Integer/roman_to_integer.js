@@ -24,14 +24,9 @@ Given a roman numeral, convert it to an integer. */
 //Lets Say RaomanInt is LVIII
 var romanToInt = function (s) {
     var strArray = s.split("");
-    const romanLetters = new Map();
-    romanLetters.set("I", 1);
-    romanLetters.set("V", 5);
-    romanLetters.set("X", 10);
-    romanLetters.set("L", 50);
-    romanLetters.set("C", 100);
-    romanLetters.set("D", 500);
-    romanLetters.set("M", 1000);
+    const romanLetters = new Map();romanLetters.set("I", 1);romanLetters.set("V", 5);
+    romanLetters.set("X", 10);romanLetters.set("L", 50);romanLetters.set("C", 100);
+    romanLetters.set("D", 500); romanLetters.set("M", 1000);
     var result = 0;
     for (let index = 0; index < strArray.length; index++) {
         if ((strArray[index] === "I") && strArray[index + 1] !== undefined) {
