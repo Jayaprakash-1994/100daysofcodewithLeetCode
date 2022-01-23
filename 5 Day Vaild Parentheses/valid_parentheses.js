@@ -26,9 +26,11 @@ var isValid = function (s) {
     map.set("[", "]");
     map.set("{", "}");
     for(let i=0; i < s.length; i++){
+        //Store Parantheses in Stack Array
         if(map.has(s[i])){
             arrayStack.push(s[i])
         }
+        //If Parentheses Not found in the map.Check the last char inserted with Current Char.
         else if(s[i] != map.get(arrayStack.pop())){
             return false;
         }
