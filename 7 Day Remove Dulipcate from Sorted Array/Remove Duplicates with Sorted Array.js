@@ -61,5 +61,5 @@ var removeDuplicates = function (nums) {
             }
         }
     }
-    return nums;
+    return result;
 };
